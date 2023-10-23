@@ -1,0 +1,88 @@
+/* bootstrap */
+@import url(bootstrap.min.css);
+
+/* fontawsm */
+@import url(all.min.css);
+
+/* font */
+@font-face {
+    font-family: Great;
+    src: url(fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8ecde;
+}
+
+/* start code  */
+.bookmark {
+    padding: 100px 0;
+}
+
+.bookmark .bookmark__title {
+    padding-bottom: 50px;
+    margin-bottom: 50PX;
+    border-bottom: 4px dotted black;
+}
+
+.bookmark .bookmark__title h1 {
+    font-family: Great;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 800;
+    z-index: 3;
+}
+
+.bookmark .bookmark__title h1::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    height: 40%;
+    width: 80%;
+    background-color: #f3b85d;
+    z-index: -1;
+}
+
+.bookmark .bookmark__info .heading h2 {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 1;
+    background: linear-gradient(270deg, #b2ac4c, #3aa656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bookmark .bookmark__info label {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.bookmark .bookmark__info button {
+    font-size: 18px;
+}
+
+table th {
+    background-color: #f3b85d;
+    position: relative;
+    z-index: 1;
+}
+
+table th::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    height: 70%;
+    width: 30%;
+    background-color: #f3b85d;
+    z-index: -1;
+}
+
+#visitBtn {
+    background-color: #9db23a;
+}

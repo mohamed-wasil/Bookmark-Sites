@@ -50,7 +50,7 @@ function displaySite() {
 
 // function to vist site 
 function vistSite(URL) {
-    window.open(siteContainer[URL].url ,"_blank");
+    window.open(siteContainer[URL].url);
 }
 
 // delete item function

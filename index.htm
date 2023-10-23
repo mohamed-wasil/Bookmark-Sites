@@ -12,7 +12,7 @@
 
 <body>
     <!-- start code -->
-    <section class="bookmark vh-100">
+    <section class="bookmark">
         <div class="container">
             <div class="bookmark__title text-center">
                 <h1 class="position-relative">Bookmarker</h1>
@@ -36,16 +36,17 @@
                 <input type="text" id="sUrl" placeholder="Website URL" class="p-2  form-control">
 
                 <button id="addBtn" class="btn btn-danger d-block mx-auto mt-4 px-5">Submit</button>
+                <div class="line"></div>
                 <input id="searshBtn" onkeyup="searchSite(this.value)" class="form-control w-50 mt-4 px-3 mx-auto"
                     placeholder="Search On your Site" />
             </div>
 
             <table class="table mt-5  text-center">
                 <thead>
-                    <th>Index</th>
-                    <th>Website Name</th>
-                    <th>Visit</th>
-                    <th>Delete</th>
+                    <th class="py-3">Index</th>
+                    <th class="py-3">Website Name</th>
+                    <th class="py-3">Visit</th>
+                    <th class="py-3">Delete</th>
                 </thead>
                 <tbody id="tableBody"></tbody>
             </table>

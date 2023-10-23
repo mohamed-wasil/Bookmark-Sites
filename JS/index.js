@@ -21,7 +21,7 @@ function addSite() {
     siteContainer.push(site);
     localStorage.setItem("site", JSON.stringify(siteContainer));
     displaySite();
-    // clearData();
+    clearData();
 }
 
 // to add event to Button
@@ -50,7 +50,7 @@ function displaySite() {
 
 // function to vist site 
 function vistSite(URL) {
-    window.open(siteContainer[URL].url);
+    window.open(siteContainer[URL].url ,"_blank");
 }
 
 // delete item function
